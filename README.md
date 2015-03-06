@@ -8,20 +8,20 @@ Installation
 
 Update your `composer.json` file to include this package as a dependency
 ```json
-"davibennun/laravel-push-notification": "dev-master"
+"Laraviet/laravel-push-notification": "dev-master"
 ```
 
 Register the PushNotification service provider by adding it to the providers array in the `app/config/app.php` file.
 ```php
 'providers' => array(
-    Davibennun\LaravelPushNotification\LaravelPushNotificationServiceProvider
+    Laraviet\LaravelPushNotification\LaravelPushNotificationServiceProvider
 )
 ```
 
 Alias the PushNotification facade by adding it to the aliases array in the `app/config/app.php` file.
 ```php
 'aliases' => array(
-    'PushNotification' => 'Davibennun\LaravelPushNotification\Facades\PushNotification'
+    'PushNotification' => 'Laraviet\LaravelPushNotification\Facades\PushNotification'
 )
 ```
 
@@ -29,7 +29,7 @@ Alias the PushNotification facade by adding it to the aliases array in the `app/
 
 Copy the config file into your project by running
 ```
-php artisan config:publish davibennun/laravel-push-notification
+php artisan vendor:publish
 ```
 
 This will generate a config file like this
