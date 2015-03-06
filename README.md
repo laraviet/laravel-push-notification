@@ -8,7 +8,7 @@ Installation
 
 Update your `composer.json` file to include this package as a dependency
 ```json
-"laraviet/laravel-push-notification": "dev-master"
+"laraviet/laravel-push-notification": "2.*"
 ```
 
 Register the PushNotification service provider by adding it to the providers array in the `app/config/app.php` file.
