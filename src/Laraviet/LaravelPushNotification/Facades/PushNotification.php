@@ -1,4 +1,4 @@
-<?php namespace Davibennun\LaravelPushNotification\Facades;
+<?php namespace Laraviet\LaravelPushNotification\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

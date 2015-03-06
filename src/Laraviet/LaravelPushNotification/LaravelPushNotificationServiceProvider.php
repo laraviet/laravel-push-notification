@@ -1,7 +1,7 @@
-<?php namespace Davibennun\LaravelPushNotification;
+<?php namespace Laraviet\LaravelPushNotification;
 
 use Illuminate\Support\ServiceProvider,
-    Davibennun\LaravelPushNotification\PushNotification;
+    Laraviet\LaravelPushNotification\PushNotification;
 
 class LaravelPushNotificationServiceProvider extends ServiceProvider {
 
@@ -19,7 +19,9 @@ class LaravelPushNotificationServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('davibennun/laravel-push-notification');
+        $this->publishes([
+            __DIR__.'/../../config/config.php' => config_path('packages/laraviet/laravel-push-notification/config.php'),
+        ]);
     }
 
     /**

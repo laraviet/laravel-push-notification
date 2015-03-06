@@ -1,10 +1,10 @@
-<?php namespace Davibennun\LaravelPushNotification;
+<?php namespace Laraviet\LaravelPushNotification;
 
 class PushNotification {
 
     public function app($appName)
     {
-        return new App(\Config::get('laravel-push-notification::'.$appName));
+        return new App(\Config::get('packages.laraviet.laravel-push-notification.config.'.$appName));        
     }
 
     public function Message()

@@ -1,4 +1,4 @@
-<?php namespace Davibennun\LaravelPushNotification;
+<?php namespace Laraviet\LaravelPushNotification;
 
 use Sly\NotificationPusher\PushManager,
     Sly\NotificationPusher\Model\Device,
